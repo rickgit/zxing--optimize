@@ -16,7 +16,7 @@ optimize scan  efficiency
     }
 </pre>
 
-2. 
+2.<br/>
 <pre>
 com.thorao.powzxing.zxing.camera.CameraConfigurationManager#initFromCameraParameters
 
