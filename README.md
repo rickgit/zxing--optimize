@@ -2,8 +2,10 @@
 optimize scan  efficiency 
 
 适配屏幕
+<br/>
+1.
 <pre>
-1.  @Override
+    @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width,
                                int height) {
         LogUtils.logInfo("要显示的范围 " + width + " " + height);
@@ -13,8 +15,10 @@ optimize scan  efficiency
         }
     }
 </pre>
+
+2. 
 <pre>
-2. com.thorao.powzxing.zxing.camera.CameraConfigurationManager#initFromCameraParameters
+com.thorao.powzxing.zxing.camera.CameraConfigurationManager#initFromCameraParameters
 
 screenResolution = new Point(display.getWidth(), ViewfinderView.requestHeight==0? display.getHeight():ViewfinderView.requestHeight);
 </pre>
