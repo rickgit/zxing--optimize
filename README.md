@@ -1,7 +1,7 @@
 # zxing--optimize
 optimize scan  efficiency 
 
-适配屏幕
+## 适配屏幕
 <br/>
 1.
 <pre>
@@ -22,3 +22,9 @@ com.thorao.powzxing.zxing.camera.CameraConfigurationManager#initFromCameraParame
 
 screenResolution = new Point(display.getWidth(), ViewfinderView.requestHeight==0? display.getHeight():ViewfinderView.requestHeight);
 </pre>
+
+
+## 设置采样率
+inSampleSize(采样率)
+
+尝试多次不同的采样率来进行Decode，如 1,2,4,8,16,32
